@@ -5,7 +5,7 @@
     <description>Salwaar kameez and ethnic cloth store</description>
     <author email="mail@patelbrothers.fashion" href="http://patelbrothers.fashion">patelbrothers.fashion</author>
 
-    <preference name="phonegap-version" value="cli-6.3.0" />
+    <preference name="phonegap-version" value="3.3.0" />
     <feature name="http://api.phonegap.com/1.0/device" />
     
     <preference name="orientation" value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
@@ -23,7 +23,6 @@
     <gap:plugin name="org.apache.cordova.vibration" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="com.simplec.plugins.localnotification" />
-
 
 	<icon src="icon.png" />
 	
@@ -51,4 +50,3 @@
     <content src="http://patelbrothers.fashion/beta" />
     <access origin="*" subdomains="true" />
 </widget>
-
