@@ -23,7 +23,7 @@
     <gap:plugin name="org.apache.cordova.vibration" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="com.simplec.plugins.localnotification" />
-    <plugin name="com.telerik.plugins.nativepagetransitions" source="npm" />
+    <plugin name="com.telerik.plugins.nativepagetransitions" spec="0.2.2" source="pgb" />>
 
 	<icon src="icon.png" />
 	
