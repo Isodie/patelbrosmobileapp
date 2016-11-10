@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.agameoftwohalves.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     
-    <name>A Game of Two Halves</name>
-    <description>Latest from the Last Word on Football</description>
-    <author email="chris@" href="http://www.agameoftwohalves.com">AGOTH Webmaster</author>
+    <name>Patel Brothers</name>
+    <description>Salwaar kameez and ethnic cloth store</description>
+    <author email="mail@patelbrothers.fashion" href="http://patelbrothers.fashion">patelbrothers.fashion</author>
 
     <preference name="phonegap-version" value="3.3.0" />
     <feature name="http://api.phonegap.com/1.0/device" />
     
-    <preference name="orientation"                value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="orientation" value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
     
     <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.camera" />
@@ -50,3 +50,4 @@
     <content src="http://patelbrothers.fashion/beta" />
     <access origin="*" subdomains="true" />
 </widget>
+
