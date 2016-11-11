@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.blamo.mobile_website" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Mobile_WebSite_App</name>
-    <description>Mobile App Wrapper for Mobile Web Site</description>
+<widget id="fashion.patelbroters.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Patel Brothers</name>
+    <description>Ethnic Cloth Store</description>
     <author email="blamonet@gmail.com" href="http://blamonet.com">
         Aaron Grant
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
-    <preference name="orientation" value="default" />
+    <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
