@@ -43,7 +43,7 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-
+        window.open = cordova.InAppBrowser.open;
         console.log('Received Event: ' + id);
     }
 };
