@@ -1,33 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.agameoftwohalves.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.patelbros.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     
     <name>Patel Brothers</name>
     <description>Salwaar kameez and ethnic cloth store</description>
     <author email="mail@patelbrothers.fashion" href="http://patelbrothers.fashion">patelbrothers.fashion</author>
 
-    <preference name="phonegap-version" value="cli-6.3.0" />
+    <preference name="phonegap-version" value="3.3.0" />
     <feature name="http://api.phonegap.com/1.0/device" />
     
     <preference name="orientation" value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
     
-    <plugin name="cordova-plugin-battery-status" />
-    <plugin name="cordova-plugin-camera" />
-    <plugin name="cordova-plugin-media-capture" />
-    <plugin name="cordova-plugin-console" />
-    <plugin name="cordova-plugin-contacts" />
-    <plugin name="cordova-plugin-device" />
-    <plugin name="cordova-plugin-device-motion" />
-    <plugin name="cordova-plugin-device-orientation" />
-    <plugin name="cordova-plugin-dialogs" />
-    <plugin name="cordova-plugin-file" />
-    <plugin name="cordova-plugin-file-transfer" />
-    <plugin name="cordova-plugin-geolocation" />
-    <plugin name="cordova-plugin-globalization" />
-    <plugin name="cordova-plugin-inappbrowser" />
-    <plugin name="cordova-plugin-media" />
-    <plugin name="cordova-plugin-network-information" />
-    <plugin name="cordova-plugin-splashscreen" />
-    <plugin name="cordova-plugin-vibration" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="org.apache.cordova.media-capture" />
+    <gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.contacts" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.vibration" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="com.simplec.plugins.localnotification" />
 
 	<!-- Define app icon for each platform. -->
     <icon src="icon.png" />
