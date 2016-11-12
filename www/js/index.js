@@ -22,10 +22,47 @@ var app = {
         this.bindEvents();
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() {
-			
+			if (cordova.platformId == 'android') {
+           StatusBar.backgroundColorByHexString("#00695c");
+           }
+
             console.log('Application Ready');
             if (checkConnection()) {
               var ref = cordova.InAppBrowser.open(encodeURI('http://patelbrothers.fashion/beta'), '_self', 'location=no');
+			   ref.addEventListener('loadstart', inAppBrowserbLoadStart);
+               ref.addEventListener('loadstop', inAppBrowserbLoadStop);
+               ref.addEventListener('loaderror', inAppBrowserbLoadError);
+               ref.addEventListener('exit', inAppBrowserbClose);
+			  function inAppBrowserbLoadStart(event) {
+		       navigator.notification.activityStart("Please Wait", "Its loading....");
+              }
+
+    function inAppBrowserbLoadStop(event) {
+		navigator.notification.activityStop();
+		 ref.removeEventListener('loadstart', inAppBrowserbLoadStart);
+         ref.removeEventListener('loadstop',  inAppBrowserbLoadStart);
+    }
+
+    function inAppBrowserbLoadError(event) {
+	     navigator.notification.activityStop();
+    }
+
+    function inAppBrowserbClose(event) {
+          navigator.notification.activityStop();
+		  if (navigator.app) {
+navigator.app.exitApp();
+}
+else if (navigator.device) {
+  
+}
+else {
+          window.close();
+}
+         ref.removeEventListener('loadstart', inAppBrowserbLoadStart);
+         ref.removeEventListener('loadstop', inAppBrowserbLoadStop);
+         ref.removeEventListener('loaderror', inAppBrowserbLoadError);
+         ref.removeEventListener('exit', inAppBrowserbClose);
+}
             } else {
               var ref = window.open('offline.html', '_self', 'location=no');
             }
