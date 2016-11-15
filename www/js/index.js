@@ -28,7 +28,7 @@ var app = {
 
             console.log('Application Ready');
             if (checkConnection()) {
-              var ref = cordova.InAppBrowser.open(encodeURI('http://patelbrothers.fashion/beta'), '_self', 'location=no');
+              var ref = cordova.InAppBrowser.open(encodeURI('http://theme-one.com/mobius/home-creative/'), '_self', 'location=no');
 			   ref.addEventListener('loadstart', inAppBrowserbLoadStart);
                ref.addEventListener('loadstop', inAppBrowserbLoadStop);
                ref.addEventListener('loaderror', inAppBrowserbLoadError);
